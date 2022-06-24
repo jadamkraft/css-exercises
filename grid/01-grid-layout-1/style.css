@@ -8,6 +8,10 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+
+  display: inline-grid;
+  grid-template: 120px 120px 120px 120px 120px 120px 120px / 320px 320px 320px 320px;
+  gap: 15px;
 }
 
 .container div {
@@ -21,18 +25,22 @@ body, html {
 
 .header {
   background-color: #FFDE22;
+  grid-area: 1 / 1 / 1 / -1;
 }
 
 .sidebar {
   background-color: #FF7755;
+  grid-area: 2 / 1 / 6 / 1;
 }
 
 .nav {
   background-color: #00DDFF;
+  grid-area: 2 / 2 / 2 / -1;
 }
 
 .article {
   background-color: #bccbde;
+  grid-area: 3 / 2 / 6 / -1;
 }
 
 .article p {
@@ -44,4 +52,5 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+  grid-area: 6 / 1 / 6 / -1;
 }
